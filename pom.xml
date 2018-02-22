@@ -4,7 +4,7 @@
   <groupId>io.pivotal</groupId>
   <artifactId>directory-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -87,6 +87,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -101,11 +102,12 @@
     <build>
         <finalName>directoryservice</finalName>
         <defaultGoal>package</defaultGoal>
-        <plugins>
+       <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+			
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
