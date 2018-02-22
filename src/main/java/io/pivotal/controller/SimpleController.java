@@ -18,7 +18,7 @@ public class SimpleController {
     }
 
     @RequestMapping("/dbinfo")
-    public DBInfo getInfo(){
+    public DBInfo getInfo(){ 
         return this.dbinfo;
     }
 }
