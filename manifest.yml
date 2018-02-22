@@ -1,0 +1,9 @@
+---
+applications:
+- name: directoryservice
+  memory: 1G
+  disk: 1G
+  instances: 1
+  path: target/*.jar
+  routes:
+   - route: directoryservice.apps.cumuluslabs.io
