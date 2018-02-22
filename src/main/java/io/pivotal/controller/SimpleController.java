@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SimpleController {
 
+
     DBInfo dbinfo;
     public SimpleController(DBInfo dbinfo){
         this.dbinfo = dbinfo;
