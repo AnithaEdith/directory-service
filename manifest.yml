@@ -4,7 +4,6 @@ applications:
   memory: 1G
   disk: 1G
   instances: 1
-  path: target/*.jar
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/directoryservice.war
   routes:
    - route: directoryservice.apps.cumuluslabs.io
